@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>StreamPal - Meet and Stream</title>
+<style>
+.container {
+	position: relative;
+}
+
+h1 {
+	font-size: 60px;
+	color: #80aaff;
+	font-family: verdana;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-size: 30px;
+	color: #80aaff;
+	font-family: verdana;
+	margin-top: 10px;
+}
+
+#backGrad {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 41%,
+		rgba(54, 8, 54, 1) 68%, rgba(41, 73, 138, 1) 95%);
+}
+
+.strangerThings {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://upload.wikimedia.org/wikipedia/en/7/7a/ST3LambertPoster.png');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.strangerThings:hover {
+	transform: scale(1.1);
+}
+
+.friends {
+	transition: transform 0.6s;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.8435749299719888) 91%),
+		url('https://4.bp.blogspot.com/-msEvWGKlygE/VnEcNFjkqkI/AAAAAAAAAns/GTh7ICZgCEw/s1600/Friends-together-with%2Btitle-friends.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.friends:hover {
+	transform: scale(1.1);
+}
+
+.theWitcher {
+	transition: transform 0.6s;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5_Op8sxxSsRgkBrblKgAedytsKbg2jJpf-0SsEkTJ0AObp-iT&usqp=CAU');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.theWitcher:hover {
+	transform: scale(1.1);
+}
+
+.edSheeran {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://nation.com.pk/print_images/medium/2019-12-17/ed-sheeran-named-most-streamed-artist-of-2019-1576608301-5566.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.edSheeran:hover {
+	transform: scale(1.1);
+}
+
+.eminem {
+	transition: transform 0.6s;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/d/f/e/9/3645-d548-420b-8765-ce7762ed8030.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.eminem:hover {
+	transform: scale(1.1);
+}
+
+.loote {
+	transition: transform 0.6s;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.3897934173669467) 91%),
+		url('https://lastfm.freetls.fastly.net/i/u/300x300/0113b5ff9f68f2470f468669a9bc1e87.png');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.loote:hover {
+	transform: scale(1.1);
+}
+
+#music {
+	border-radius: 20px;
+	background: #ccb3ff;
+	width: 300px;
+	height: 180px;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	color: white;
+	margin-right: 30px;
+	text-decoration: none;
+	display: block;
+}
+
+.tvText {
+	position: absolute;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: verdana;
+	top: 148px;
+	margin-bottom: 120px;
+	margin-left: 10px;
+}
+
+.myFriends {
+	position: absolute;
+	top: 70px;
+	left: 550px;
+	width: auto;
+	position: absolute;
+}
+
+.matches {
+	font-size: 20px;
+	margin-top: 35px;
+	font-family: verdana;
+}
+
+.match1 {
+	border: 3px solid #aa80ff;
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://format-com-cld-res.cloudinary.com/image/private/s--zTyt6TRx--/c_fill,g_faces,h_200,w_200/fl_keep_iptc.progressive,q_95/v1/2f37b95a4ce60f79a90b6d497d30e7ca/Fiona-1.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match2 {
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://www.howtogeek.com/thumbcache/200/200/f865a71d9c7ddffc9b95492aa9ff3f0c/wp-content/uploads/2018/08/profile-square-1000px.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match3 {
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://assets.entrepreneur.com/content/1x1/300/20151116160813-headshot-nathan.jpeg?width=200&crop=1:1');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match4 {
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://www.championsma.us/wp-content/uploads/2017/09/Erica-Ritchie.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+</style>
+</head>
+<body id="backGrad">
+		<div>
+				<div class="backGrad"
+				style="margin: 30px; padding: 50px; text-align: left; border-radius: 20px;">
+						<div class=myFriends>
+								<ul id="matchClick">
+										<a href='Match.html'><li class="container"><p
+																class="match1"></p></a>
+										<li class="container"><p class="match2">
+										<li class="container"><p class="match3">
+										<li class="container"><p class="match4">
+														<a href='newMatch.html'><li class="container"><p
+																				class="matches">All Matches</p></a>
+								</ul>
+				</div>
+						<h1>StreamPal</h1>
+						<p>Hey, binge with your pal</p>
+
+						<ul>
+								<li class="container"
+										onclick="tvshow('https://www.netflix.com/in/title/80057281')"><p
+												class="strangerThings">
+										<div class="tvText">Stranger Things</div></li>
+								<li class="container"
+										onclick="tvshow('https://www.netflix.com/in/title/70153404')"><p
+												class="friends">
+										<div class="tvText">Friends</div></li>
+								<li class="container"
+										onclick="tvshow('https://www.netflix.com/in/title/80189685')"><p
+												class="theWitcher">
+										<div class="tvText">The Witcher</div></li>
+
+						</ul>
+						<p>Your friends are listening to</p>
+						<ul>
+								<li class="container"
+										onclick="tvshow('https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V')"><p
+												class="edSheeran">
+										<div class="tvText">Ed Sheeran</div></li>
+								<li class="container"
+										onclick="tvshow('https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR')"><p
+												class="eminem">
+										<div class="tvText">Eminem</div></li>
+								<li class="container"
+										onclick="tvshow('https://open.spotify.com/artist/00TKPo9MxwZ0j4ooveIxWZ')"><p
+												class="loote">
+										<div class="tvText">Loote</div></li>
+
+						</ul>
+		</div>
+		</div>
+		<script>
+			function tvshow(url) {
+				window.open(url);
+			}
+		</script>
+</body>
+</html>

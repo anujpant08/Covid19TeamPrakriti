@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>StreamPal - All Matches</title>
+<style>
+.container {
+	position: relative;
+}
+
+h1 {
+	font-size: 60px;
+	color: #80aaff;
+	font-family: verdana;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-size: 30px;
+	color: #80aaff;
+	font-family: verdana;
+	margin-top: 10px;
+}
+
+#backGrad {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 41%,
+		rgba(54, 8, 54, 1) 68%, rgba(41, 73, 138, 1) 95%);
+}
+
+.formula1 {
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://i.pinimg.com/474x/f5/8f/0e/f58f0ea97f4c923933fa884b2a365416.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.night {
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.8435749299719888) 91%),
+		url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSK8F1Eqim9lHL5VWsETgifoPW2pTRiKfA1IuA2o0yTmSxAhR-w&usqp=CAU');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.blackmirror {
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://i2.wp.com/ramenswag.com/wp-content/uploads/2018/12/black-mirror-bandersnatch-wallpaper-4k.jpg?resize=807%2C401&ssl=1');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.drake {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.6587009803921569) 100%),
+		url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNjyf5si2ys2JSTWuxF1RymV_nSgWNGj0DDR6OJaXeeGjBn-25&usqp=CAU');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.drake:hover {
+	transform: scale(1.1);
+}
+
+.taylor {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.6587009803921569) 100%),
+		url('https://cdn.styleblueprint.com/wp-content/uploads/2015/08/SBTeamHeadshots_09_16-12-900x900.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.taylor:hover {
+	transform: scale(1.1);
+}
+
+.kygo {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.3897934173669467) 91%),
+		url('https://tikvahfund.org/wp-content/uploads/2018/09/Tikvah_Headshot-13-900x900.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.kygo:hover {
+	transform: scale(1.1);
+}
+
+.kathy {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.3897934173669467) 91%),
+		url('https://theappalachianonline.com/wp-content/uploads/2019/01/HEADSHOT-900x900.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.kathy:hover {
+	transform: scale(1.1);
+}
+
+#music {
+	border-radius: 20px;
+	background: #ccb3ff;
+	width: 300px;
+	height: 180px;
+	box-shadow: 2px 12px 28px -7px rgba(204, 179, 255, 0.4);
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	color: white;
+	margin-right: 30px;
+	text-decoration: none;
+	display: block;
+}
+
+.name {
+	font-size: 30px;
+	font-family: verdana;
+}
+
+.date {
+	position: relative;
+	top: 40px;
+	color: #aa80ff;
+	left: -108px;
+	font-size: 20px;
+	font-family: verdana;
+}
+
+.tvText {
+	position: relative;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: verdana;
+	top: -90px;
+	margin-left: 12px;
+}
+
+.matchText {
+	position: relative;
+	font-size: 16px;
+	top: -85px;
+	margin-left: 12px;
+	font-family: verdana;
+}
+
+.reason {
+	position: relative;
+	font-size: 20px;
+	top: -40px;
+	text-align: center;
+	color: #aa80ff;
+	margin-left: 12px;
+	font-family: verdana;
+}
+
+.myFriends {
+	position: relative;
+	top: -10px;
+}
+
+.matches {
+	font-size: 20px;
+	margin-top: 35px;
+	font-family: verdana;
+}
+
+.match1 {
+	border: 3px solid #aa80ff;
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://format-com-cld-res.cloudinary.com/image/private/s--zTyt6TRx--/c_fill,g_faces,h_200,w_200/fl_keep_iptc.progressive,q_95/v1/2f37b95a4ce60f79a90b6d497d30e7ca/Fiona-1.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match2 {
+	border: 3px solid #aa80ff;
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://www.howtogeek.com/thumbcache/200/200/f865a71d9c7ddffc9b95492aa9ff3f0c/wp-content/uploads/2018/08/profile-square-1000px.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match3 {
+	border: 3px solid #aa80ff;
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://assets.entrepreneur.com/content/1x1/300/20151116160813-headshot-nathan.jpeg?width=200&crop=1:1');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match4 {
+	border: 3px solid #aa80ff;
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://www.championsma.us/wp-content/uploads/2017/09/Erica-Ritchie.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match5 {
+	border: 3px solid #aa80ff;
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://i.pinimg.com/236x/e4/5c/f3/e45cf3b432f4da4579bffc41ab80d462.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.fab {
+	width: 70px;
+	height: 70px;
+	background-color: #aa80ff;
+	border-radius: 50%;
+	box-shadow: 0 6px 10px 0 #666;
+	transition: all 0.1s ease-in-out;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	top: 50px;
+	left: 110px;
+	position: relative;
+	text-align: center;
+}
+
+.fab:hover {
+	box-shadow: 0 6px 14px 0 #666;
+	transform: scale(1.05);
+	background-color: #80aaff;
+}
+</style>
+</head>
+<body id="backGrad">
+		<div>
+				<div
+				style="margin: 30px; padding: 50px; text-align: left; border-radius: 20px;">
+
+						<p>All Matches</p>
+
+						<div class=myFriends>
+								<ul>
+										<a href='Match.html'><li class="container"><p
+																class="match1"></p></a>
+										<li class="container"><p class="match2">
+										<li class="container"><p class="match3">
+										<li class="container"><p class="match4">
+										<li class="container"><p class="match5"></p>
+								</ul>
+				</div>
+						<p>Find new people</p>
+						<ul>
+								<li class="container"><p class="drake">
+										<div class="tvText">Charlie</div>
+										<div class="matchText">86% Match</div>
+										<div class="reason">Based on: The Witcher</div></li>
+								<li class="container"><p class="taylor">
+										<div class="tvText">Haley</div>
+										<div class="matchText">78% Match</div>
+										<div class="reason">Based on: Taylor Swift</div></li>
+								<li class="container"><p class="kygo">
+										<div class="tvText">Jon</div>
+										<div class="matchText">83% Match</div>
+										<div class="reason">Based on: Friends</div></li>
+								<li class="container"><p class="kathy">
+										<div class="tvText">Kathy</div>
+										<div class="matchText">80% Match</div>
+										<div class="reason">Based on: Loote</div></li>
+								<li class="container" onclick="newMatch()"><p class="fab">+</p>
+						</ul>
+
+		</div>
+		</div>
+		<script>
+			function newMatch() {
+				window.open("findNew.html", "_self");
+			}
+		</script>
+</body>
+</html>

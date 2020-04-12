@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Anna - Your Match</title>
+<style>
+.container {
+	position: relative;
+}
+
+h1 {
+	font-size: 60px;
+	color: #80aaff;
+	font-family: verdana;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-size: 30px;
+	color: #80aaff;
+	font-family: verdana;
+	margin-top: 10px;
+}
+
+#backGrad {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 41%,
+		rgba(54, 8, 54, 1) 68%, rgba(41, 73, 138, 1) 95%);
+}
+
+.formula1 {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://i.pinimg.com/474x/f5/8f/0e/f58f0ea97f4c923933fa884b2a365416.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.formula1:hover {
+	transform: scale(1.1);
+}
+
+.night {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.8435749299719888) 91%),
+		url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSK8F1Eqim9lHL5VWsETgifoPW2pTRiKfA1IuA2o0yTmSxAhR-w&usqp=CAU');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.night:hover {
+	transform: scale(1.1);
+}
+
+.blackmirror {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://i2.wp.com/ramenswag.com/wp-content/uploads/2018/12/black-mirror-bandersnatch-wallpaper-4k.jpg?resize=807%2C401&ssl=1');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.blackmirror:hover {
+	transform: scale(1.1);
+}
+
+.drake {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2019/12/04/1872731-210566317.jpg?itok=PCfn2e4J');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.drake:hover {
+	transform: scale(1.1);
+}
+
+.taylor {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 1) 91%),
+		url('https://www.bongminesentertainment.com/wp-content/uploads/2019/08/Taylor-swift.jpg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.taylor:hover {
+	transform: scale(1.1);
+}
+
+.kygo {
+	transition: transform 0.6s;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.3897934173669467) 91%),
+		url('https://is5-ssl.mzstatic.com/image/thumb/Features22/v4/41/9a/2e/419a2eae-f3b5-f5b7-109d-e518a4180061/mzm.xitokrfl.jpg/800x800bb.jpeg');
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.kygo:hover {
+	transform: scale(1.1);
+}
+
+#music {
+	border-radius: 20px;
+	background: #ccb3ff;
+	width: 300px;
+	height: 180px;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	color: white;
+	margin-right: 30px;
+	text-decoration: none;
+	display: block;
+}
+
+.name {
+	font-size: 30px;
+	font-family: verdana;
+}
+
+.date {
+	position: relative;
+	top: 40px;
+	color: #aa80ff;
+	left: -108px;
+	font-size: 20px;
+	font-family: verdana;
+}
+
+.tvText {
+	position: absolute;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: verdana;
+	top: 148px;
+	margin-bottom: 120px;
+	margin-left: 10px;
+}
+
+.myFriends {
+	position: absolute;
+	top: 80px;
+	left: 550px;
+	width: auto;
+	position: absolute;
+}
+
+.matches {
+	font-size: 20px;
+	margin-top: 35px;
+	font-family: verdana;
+}
+
+.match1 {
+	border: 3px solid #aa80ff;
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://format-com-cld-res.cloudinary.com/image/private/s--zTyt6TRx--/c_fill,g_faces,h_200,w_200/fl_keep_iptc.progressive,q_95/v1/2f37b95a4ce60f79a90b6d497d30e7ca/Fiona-1.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match2 {
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://www.howtogeek.com/thumbcache/200/200/f865a71d9c7ddffc9b95492aa9ff3f0c/wp-content/uploads/2018/08/profile-square-1000px.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match3 {
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://assets.entrepreneur.com/content/1x1/300/20151116160813-headshot-nathan.jpeg?width=200&crop=1:1');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+
+.match4 {
+	background-size: contain;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+		rgba(45, 19, 29, 0.1516981792717087) 100%),
+		url('https://www.championsma.us/wp-content/uploads/2017/09/Erica-Ritchie.jpg');
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 2px 12px 28px -7px rgba(128, 170, 255, 0.35);
+}
+</style>
+</head>
+<body id="backGrad">
+		<div>
+				<div
+				style="margin: 30px; padding: 50px; text-align: left; border-radius: 20px;">
+						<div class=myFriends>
+								<ul id="matchClick">
+										<li class="container"><p class="match2">
+										<li class="container"><p class="match3">
+										<li class="container"><p class="match4">
+														<a href='newMatch.html'><li class="container"><p
+																				class="matches">More</p></a>
+								</ul>
+				</div>
+						<ul>
+								<li class="container"><p class="match1">
+								<li class="container"><p class="name">Anna</p></li>
+								<li class="container"><p class="date">Matched 3 days
+												ago</p></li>
+						</ul>
+						<p>Anna's top shows</p>
+
+						<ul>
+								<li class="container"
+										onclick="tvshow('https://www.netflix.com/in/title/80204890')"><p
+												class="formula1">
+										<div class="tvText">Formula 1</div></li>
+								<li class="container"
+										onclick="tvshow('https://www.netflix.com/in/title/80218938')"><p
+												class="night">
+										<div class="tvText">Night on Earth</div></li>
+								<li class="container"
+										onclick="tvshow('https://www.netflix.com/in/title/70264888')"><p
+												class="blackmirror">
+										<div class="tvText">Black Mirror</div></li>
+
+						</ul>
+						<p>Her top picks</p>
+						<ul>
+								<li class="container"
+										onclick="tvshow('https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4')"><p
+												class="drake">
+										<div class="tvText">Drake</div></li>
+								<li class="container"
+										onclick="tvshow('https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02')"><p
+												class="taylor">
+										<div class="tvText">Taylor Swift</div></li>
+								<li class="container"
+										onclick="tvshow('https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4')"><p
+												class="kygo">
+										<div class="tvText">Kygo</div></li>
+
+						</ul>
+
+		</div>
+		</div>
+		<script>
+			function tvshow(url) {
+				window.open(url);
+			}
+		</script>
+</body>
+</html>
